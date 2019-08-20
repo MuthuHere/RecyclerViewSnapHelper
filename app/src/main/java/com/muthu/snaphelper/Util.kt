@@ -7,6 +7,9 @@ import android.view.WindowManager
 
 object Util {
 
+    /**
+     * get mobile screen width and convert into pixel
+     */
     fun getScreenWidthInDPs(context: Context): Int {
         val dm = DisplayMetrics()
         val windowManager = context.getSystemService(WINDOW_SERVICE) as WindowManager
@@ -19,5 +22,18 @@ object Util {
         }
         return dm.widthPixels
     }
+
+
+    /**
+     * generating card number which starts with 52:)
+     */
+     fun getRandomNumber(): String {
+        val first14 = (Math.random() * 100000000000000L).toLong()
+        val number = 5200000000000000L + first14
+
+        return number.toString()
+    }
+
+
 
 }

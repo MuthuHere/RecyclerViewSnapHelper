@@ -31,6 +31,7 @@ class NumbersAdapter(
         holder.itemView.llRootCardView.layoutParams = params
 
 
+        //setting background colors
         when (position) {
             0 -> holder.itemView.rlCardView.setBackgroundResource(R.drawable.bg_card_view_green)
             1 -> holder.itemView.rlCardView.setBackgroundResource(R.drawable.bg_card_view_pink)
@@ -39,6 +40,7 @@ class NumbersAdapter(
             else -> holder.itemView.rlCardView.setBackgroundResource(R.drawable.bg_card_view_orange)
         }
 
+        //binding data
         holder.onBind(list[position])
     }
 
