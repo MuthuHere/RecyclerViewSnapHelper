@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llRootCardView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <RelativeLayout
+            android:id="@+id/rlCardView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="15dp"
+            android:background="@drawable/bg_card_view_pink">
+
+        <TextView
+                android:id="@+id/tvCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="Muthu"
+                android:textSize="16sp"
+                android:fontFamily="@font/berkshire_swash"/>
+
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_chip"
+                android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:letterSpacing=".5"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/berkshire_swash"/>
+        <TextView
+                android:id="@+id/tvCardDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="15/22"
+                android:layout_alignParentBottom="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/amarante"/>
+        <TextView
+                android:id="@+id/tvCardCvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="145"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/amarante"
+                android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
